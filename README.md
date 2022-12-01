@@ -1,6 +1,6 @@
-﻿# HMSpice
+# HMSpice
 
-HMSpice is an electronic circuit simulator for circuits containing voltage, current sources (independent/dependent) and resistors, i.e., for **purely resistive circuits**. This simulator is built by taking inspiration from the "[Circuit Simulation](https://onlinelibrary.wiley.com/doi/book/10.1002/9780470561218)" book by Farid N. Najm.
+HMSpice is an electronic circuit simulator for circuits containing voltage, current sources (independent/dependent) and resistors, i.e., for **purely resistive circuits**. This simulator is built by taking inspiration from the "[Circuit Simulation](https://onlinelibrary.wiley.com/doi/book/10.1002/9780470561218)" book by Farid N. Najm. This work was part of my senior design project at [Shiv Nadar University](https://snu.edu.in/home) in the Monsoon 2022 semester.
 
 ## Working
 HMSpice uses Modified Nodal Analysis (MNA) to find all the nodal voltages and required currents across the branches. It builds the MNA and RHS matrices in O(n) time complexity. It goes through the netlist, checks for any error in the netlist, and makes the matrices, on the fly, in linear time, using the element stamp of each component.
